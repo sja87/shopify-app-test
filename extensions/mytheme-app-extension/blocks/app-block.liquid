@@ -1,0 +1,17 @@
+<span style="color: {{ block.settings.color }}">
+again a new change to my app. hello 123 this is my next comment in this app block. Is here a hot reload??? App blocks let you build powerful integrations with online store themes.
+</span>
+
+{% render "app_snippet" %}
+{% schema %}
+  {
+    "name": "Hello World 123",
+    "target": "section",
+    "stylesheet": "app.css",
+    "javascript": "app.js",
+    "settings": [
+        { "label": "Color", "id": "color", "type": "color", "default": "#000000" }
+    ]
+  }
+{% endschema %}
+
